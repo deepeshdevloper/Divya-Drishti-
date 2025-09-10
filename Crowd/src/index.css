@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Responsive design utilities */
+@layer utilities {
+  .touch-pan-y {
+    touch-action: pan-y;
+  }
+  
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  /* Mobile-first responsive containers */
+  .container-mobile {
+    @apply w-full px-4;
+  }
+  
+  .container-tablet {
+    @apply max-w-3xl mx-auto px-6;
+  }
+  
+  .container-desktop {
+    @apply max-w-7xl mx-auto px-8;
+  }
+}
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+/* Optimize scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Prevent layout shifts */
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive images and media */
+@media (max-width: 768px) {
+  img, video, canvas {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* Custom styles for enhanced components */
+.performance-optimized {
+  contain: layout style paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 200px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-content {
+  margin: 8px 12px;
+  line-height: 1.4;
+}
+
+/* Mobile-responsive leaflet popups */
+@media (max-width: 768px) {
+  .leaflet-popup-content-wrapper {
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leaflet-popup-content {
+    margin: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+/* Custom scrollbar for alert panels */
+.alert-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.alert-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.alert-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.alert-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Enhanced model download progress */
+.download-progress {
+  background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Custom styles for zone status indicators */
+.zone-safe {
+  background: #10b981;
+}
+
+.zone-moderate {
+  background: #f59e0b;
+}
+
+.zone-critical {
+  background: #ef4444;
+}
+
+  /* Mobile-friendly touch targets */
+  button, .clickable {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Optimize text for mobile */
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Mobile-specific spacing */
+  .space-y-6 > * + * {
+    margin-top: 1rem;
+  }
+  
+  .space-y-4 > * + * {
+    margin-top: 0.75rem;
+  }
+
+/* High contrast mode for accessibility */
+@media (prefers-contrast: high) {
+  .zone-safe { background: #008000; }
+  .zone-moderate { background: #ffa500; }
+  .zone-critical { background: #ff0000; }
+}
+
+/* Simplified styles for better performance */
+.simple-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}

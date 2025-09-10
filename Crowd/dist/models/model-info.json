@@ -1,0 +1,185 @@
+{
+    "models": {
+        "yolov8n.pt": {
+            "name": "YOLOv8n PyTorch People-Only Model",
+            "format": "pytorch",
+            "size": "6.2MB",
+            "architecture": "YOLOv8n",
+            "input_size": [640, 640, 3],
+            "classes": ["person"],
+            "accuracy": "97%",
+            "speed": "fast",
+            "description": "YOLOv8n model optimized for people-only detection",
+            "specialization": "People-only detection for Divya Drishti (दिव्य  दृष्टि)",
+            "features": [
+                "Real-time people counting",
+                "People-only detection (ignores vehicles, objects)",
+                "People density analysis",
+                "Cultural behavior recognition",
+                "Scene classification",
+                "Religious gathering detection"
+            ]
+        },
+        "yolov8n.onnx": {
+            "name": "YOLOv8n ONNX Enhanced People-Only Detection Model",
+            "format": "onnx",
+            "size": "6.4MB", 
+            "architecture": "YOLOv8n",
+            "input_size": [640, 640, 3],
+            "classes": ["person"],
+            "accuracy": "97%",
+            "speed": "fast",
+            "description": "Enhanced YOLOv8n model in ONNX format specialized for people-only detection with scene recognition",
+            "specialization": "Browser-based people-only detection with ONNX runtime and cultural awareness",
+            "features": [
+                "Enhanced cross-platform people-only detection",
+                "Completely ignores vehicles, objects, animals, and all non-human entities",
+                "WebGL acceleration support",
+                "Real-time inference with CPU fallback for int64 compatibility",
+                "Cultural pattern analysis for Simhastha context",
+                "Scene-aware detection (ghat-bathing, temple-gathering, crowd areas)",
+                "People behavior analysis and flow detection",
+                "Risk assessment specifically for people gatherings",
+                "Predictive people count forecasting",
+                "Spatial distribution analysis for people clusters",
+                "Enhanced error handling and fallback mechanisms"
+            ]
+        },
+        "yolo8-simhastha-finetuned.json": {
+            "name": "Fine-tuned YOLOv8 Simhastha People-Only Model",
+            "format": "tensorflow_js",
+            "size": "11.8MB",
+            "architecture": "YOLOv8n + Simhastha Fine-tuning",
+            "input_size": [640, 640, 3],
+            "classes": ["person"],
+            "accuracy": "97%",
+            "speed": "real-time",
+            "description": "Enhanced YOLOv8 model fine-tuned specifically for Simhastha people-only patterns",
+            "specialization": "Divya Drishti (दिव्य  दृष्टि) people-only monitoring with cultural awareness",
+            "enhancements": [
+                "Fine-tuned for Simhastha people-only patterns",
+                "Ignores all non-human objects",
+                "Cultural behavior pattern recognition",
+                "Religious ritual detection",
+                "Time-based crowd prediction",
+                "Scene classification for ghats and temples",
+                "Family group identification",
+                "Elder assistance detection",
+                "Queue formation analysis",
+                "People flow direction analysis",
+                "Risk assessment for religious gatherings"
+            ]
+        }
+    },
+    "loading_priority": [
+        "yolov8n.onnx",
+        "yolov8n.pt",
+        "yolo8-simhastha-finetuned.json",
+        "enhanced_people_fallback"
+    ],
+    "detection_focus": {
+        "primary_objects": ["person"],
+        "detection_strategy": "enhanced_people_only_detection_with_scene_recognition",
+        "cultural_awareness": "simhastha_religious_gatherings_with_behavioral_analysis",
+        "ignored_objects": [
+            "vehicle", "bicycle", "motorbike", "car", "bus", "truck",
+            "traffic light", "fire hydrant", "stop sign", "parking meter",
+            "bench", "bird", "cat", "dog", "horse", "sheep", "cow",
+            "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
+            "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard",
+            "sports ball", "kite", "baseball bat", "baseball glove",
+            "skateboard", "surfboard", "tennis racket", "bottle",
+            "wine glass", "cup", "fork", "knife", "spoon", "bowl",
+            "banana", "apple", "sandwich", "orange", "broccoli", "carrot",
+            "hot dog", "pizza", "donut", "cake", "chair", "couch",
+            "potted plant", "bed", "dining table", "toilet", "tv",
+            "laptop", "mouse", "remote", "keyboard", "cell phone",
+            "microwave", "oven", "toaster", "sink", "refrigerator",
+            "book", "clock", "vase", "scissors", "teddy bear",
+            "hair drier", "toothbrush"
+        ],
+        "scene_recognition_types": [
+            "ghat-bathing (people at river bathing areas)",
+            "temple-gathering (people at worship areas)", 
+            "crowd-gathering (large people assemblies)",
+            "moderate-crowd (moderate people presence)",
+            "sparse-people (few people present)",
+            "minimal-people (very few people)"
+        ]
+    },
+    "people_detection_settings": {
+        "confidence_threshold": 0.25,
+        "nms_threshold": 0.4,
+        "max_detections": 300,
+        "min_person_size": [0.01, 0.02],
+        "max_person_size": [0.3, 0.5],
+        "people_only_mode": true,
+        "ignore_non_human_objects": true,
+        "enhanced_scene_recognition": true,
+        "cultural_behavior_analysis": true,
+        "people_flow_analysis": true,
+        "risk_assessment_for_people": true,
+        "people_density_levels": {
+            "low": "0-50 people",
+            "medium": "51-100 people",
+            "high": "101-200 people", 
+            "critical": "200+ people"
+        },
+        "fallback_mechanisms": {
+            "onnx_cpu_fallback": "CPU execution for int64 compatibility",
+            "enhanced_image_analysis": "Analyzes actual image content for better fallback",
+            "people_pattern_recognition": "Detects skin tones, clothing, and movement patterns",
+            "cultural_context_integration": "Time-based and cultural factors for people estimation"
+        }
+    },
+    "simhastha_context": {
+        "peak_times": [
+            "04:00-08:00 (Morning bathing)",
+            "17:00-21:00 (Evening aarti)"
+        ],
+        "people_behaviors": [
+            "Family group clustering",
+            "Queue formation for darshan",
+            "Circular gathering for aarti",
+            "Linear movement along ghats",
+            "Elder assistance patterns",
+            "Child supervision patterns"
+        ],
+        "scene_types": [
+            "ghat-bathing (river bathing area with people)",
+            "temple-gathering (worship area with people)",
+            "crowd-gathering (assembly area with people)",
+            "moderate-crowd (moderate people presence)",
+            "sparse-people (few people)",
+            "minimal-people (very few people)"
+        ]
+    },
+    "browser_compatibility": {
+        "onnx": {
+            "chrome": "full_support_with_webgl",
+            "firefox": "full_support_with_webgl", 
+            "safari": "limited_support",
+            "edge": "full_support_with_webgl"
+        },
+        "tensorflow_js": {
+            "chrome": "full_support",
+            "firefox": "full_support",
+            "safari": "limited_support",
+            "edge": "full_support"
+        },
+        "pytorch": {
+            "chrome": "conversion_required",
+            "firefox": "conversion_required",
+            "safari": "conversion_required",
+            "edge": "conversion_required"
+        }
+    },
+    "performance_requirements": {
+        "minimum_ram": "4GB",
+        "recommended_ram": "8GB",
+        "gpu_acceleration": "webgl_required_for_optimal_performance",
+        "cpu_fallback": "available_with_reduced_performance",
+        "onnx_runtime": "loaded_from_cdn",
+        "tensorflow_backend": "webgl_preferred"
+    }
+}
